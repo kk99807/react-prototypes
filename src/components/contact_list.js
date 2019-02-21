@@ -16,8 +16,10 @@ class ContactList extends Component {
         const list = contacts.map((contact, i) => <ContactCard key={i} {...contact}/>);
 
         return (
-            <div>
-                {list}
+            <div className="col-8">
+                <div className="row">
+                    {list}
+                </div>
             </div>
         );
     }

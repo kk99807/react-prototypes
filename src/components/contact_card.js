@@ -1,5 +1,20 @@
 import React from 'react';
 
 export default props => {
-    return <h1>Full Name: {props.firstName} {props.lastName}</h1>;
+    const {firstName, lastName, phone, email} = props;
+
+    return (
+        <div className="col-6 my-3">
+            <div className="card">
+                <div className="card-header">{firstName} {lastName}</div>
+                <div className="card-block">
+                    <h4 className="card-title"></h4>
+                    <div className="card-text">
+                        <p>Phone: {phone}</p>
+                        <p>Email: {email}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }
